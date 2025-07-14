@@ -1,34 +1,30 @@
 body{
     background-color: lightgrey;
 }
-
 header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr auto 0.5fr;
     background-color: wheat;
+    align-items:center;
     padding: 10px 20px;
-   
 }
 header img{
-    width: 200px;
     height: 50px;
+
 }
-.navbar{
-  padding-right: 300px;
+.navbar {
+   padding-right: 400px;
+
 }
 .navbar a{
-    margin-left: 15px;
     text-decoration: none;
     color: black;
+    padding-right: 10px;
 }
 .search_items{
-    margin-left: 20px;
-   
-}
-.search_items i{
-  padding-right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .search_items input{
     height: 25px;
@@ -43,28 +39,30 @@ header img{
     color: white;
 }
 .box_section{
-    padding: 20px 30px;
-    flex-wrap: wrap;
-  
+    display: grid;
 }
-.box1 img{
-    width: 700px;
-    height: 250px;
-    padding: 10px;
-    border-radius: 30px;
-    
-}
-.box1{
-    display: flex;
+.box{
+    display: grid;
     background-color: white;
     border-radius: 30px;
+    grid-template-columns: 1fr auto;
+    margin: 10px 20px;
+    height: 300px;
+
+  
+}
+.box img{
+    width: 500px;
+    height: 270px;
+    padding: 10px 20px;
+    border-radius: 40px;
    
 }
-.box1 .content{
-    padding: 20px;
-    flex-grow: 1;
+.box .content{
+    padding: 30px 3px;
+    margin: 5px;
 }
-.box1 .tag{
+.box .tag{
     border: none;
     background-color: grey;
     color: purple;
@@ -72,41 +70,49 @@ header img{
     padding: 5px 10px;
     border-radius: 30px;
 }
-.profile img{
-   width: 30px;
-   height: 30px;
-   border-radius: 50%;
-  
-}
 .profile{
-    display: flex;
+    display:flex;
     align-items: center;
 }
+.profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}
 .side_boxs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+
+   
+}
+.side_box1{
+    background-color: white;
+    border-radius: 30px;
     display: flex;
-    padding-top: 20px;
-    gap: 10px;
-    flex: 1 1 250px;
-    max-width: 2000px;
+    margin: 10px 20px;
+  
     
 }
 .side_box1 img{
     width: 300px;
-    height: 270px;
+    height: 200px;
     border-radius: 30px;
     padding: 10px;
 }
-.side_box1{
-    display: flex;
-    background-color: white;
-    border-radius: 30px;
-    width: 590px;
-  
+.side_box1 .content{
+    padding: 30px 5px;
+}
+.side_box1 .profile{
+     display:flex;
+    align-items: center;
 
 }
-.side_box1 .content{
-    padding: 20px;
-    flex-grow: 1;
+.side_box1 .profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 
 }
 .side_box1 .tag{
@@ -118,52 +124,42 @@ header img{
     border-radius: 30px;
 
 }
-.profile img{
-   width: 30px;
-   height: 30px;
-   border-radius: 50%;
-   
-}
-.profile{
+.side_box2{
+    background-color: white;
+    border-radius: 30px;
     display: flex;
-    align-items: center;
+    margin: 10px 20px;
+    
 }
-
 .side_box2 img{
     width: 300px;
-    height: 270px;
+    height: 200px;
     border-radius: 30px;
     padding: 10px;
 }
-.side_box2{
-    display: flex;
-    background-color: white;
-    border-radius: 30px;
-    width: 590px;
-}
 .side_box2 .content{
-    padding: 20px;
-    flex-grow: 1;
+    padding: 30px 5px;
 }
-.side_box2 .tag{border: none;
+.side_box2 .profile{
+     display:flex;
+    align-items: center;
+
+}
+.side_box2 .profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+.side_box2 .tag{
+    border: none;
     background-color: grey;
-    color: yellow;
+    color: green;
     font-size: 15px;
     padding: 5px 10px;
     border-radius: 30px;
-}
-.profile img{
-   width: 30px;
-   height: 30px;
-   border-radius: 50%;
-   
-}
-.profile{
-    display: flex;
-    align-items: center;
-}
 
-
+}
 .category_section {
   text-align: center;
   padding: 40px 20px;
@@ -182,18 +178,17 @@ header img{
    cursor: pointer;
    font-size: 14px;
 }
-.cards-section{
-  display: flex;
-
+.card-grid{
+    display: grid;
 }
-
 .cards {
   display: flex;
   gap: 10px;
   flex-wrap: wrap; 
   padding: 20px ;
   border-radius: 30px;
-  justify-content: center;
+  justify-content:space-between;
+ 
 }
 
 .card {
@@ -203,14 +198,12 @@ header img{
   flex: 0 0 auto; 
  
 }
-
 .card img {
   width: 350px;
   height: 250px;
   border-radius: 20px;
   
 }
-
 .card-profile {
   display: flex;
   align-items: center;
@@ -224,7 +217,6 @@ header img{
   height: 30px;
   border-radius: 50%;
 }
-
 .tech {
   margin-left: auto;
   background-color: white;
@@ -252,7 +244,6 @@ header img{
   border-radius: 30px;
   border: 1px solid #ccc;
 }
-
 .browse-btn {
   margin-top: 40px;
   display: flex;
@@ -266,7 +257,6 @@ header img{
   border: 1px solid white;
   background-color: white;
   font-size: 14px;
- 
 }
 .authors{
     display: flex;
@@ -304,29 +294,27 @@ header img{
    
 }
 .newsletter-section {
-  background-color:grey;
-  margin: 40px;
-  padding: 30px;
- 
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
+  padding:40px 20px;
 
 }
+
 .news-content{
-    flex: 1 1 3500px;
-    max-width: 400px;
-    
-    
+       max-width: 400px; 
+}
+.newsletter-container {
+  margin: auto;
+  background-color:lightcyan;
+  border-radius: 20px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
 }
 .newsletter-form {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
-  flex-wrap: wrap;
-  align-items: center;
    
 
 }
@@ -346,17 +334,29 @@ header img{
   font-size: 14px;
   
 }
-.site-footer {
-   display: flex;
-   justify-content: space-between;
+.site-footer{
    align-items: center;
-  padding: 20px 100px;
-  margin-top: 40px;
-  font-size: 14px;
+ 
 }
+.footer-container{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr auto 0.5fr;
+    gap: 40px;
+    padding: 20px ;
+    align-items: center;
 
+
+}
+.footer-container p{
+    margin-left: 60px;
+}
+.footer-links {
+  margin-top: 5px;
+  padding-right: 200px;
+}
 .footer-links a {
-  margin: 10px 10px;
+  margin-top: 10px ;
   color: black;
   text-decoration: none;
 }
@@ -368,4 +368,7 @@ header img{
 }
 .footer-socials i {
   margin: 10px 5px;
+
 }
+   
+

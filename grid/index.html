@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex Box </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Grid</title>
     <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
-    <header>
+     <header>
         <div>
             <img src="https://lms.achieversit.com/assets/images/logo.png" alt="achiversit">
         </div>
@@ -26,14 +25,11 @@
             <i class="fa-solid fa-circle-user"></i>
             <input type="text" name="search" placeholder="Search Here">
             <button>Subscribe</button>
-        </div>
-    
-            
+        </div> 
     </header>
-
-    <!-- box section-->
-     <section class="box_section">
-        <div class="box1">
+   
+    <section class="box_section">
+        <div class="box">
              <img src="https://images.pexels.com/photos/11558042/pexels-photo-11558042.jpeg" alt="city">
             <div class="content">
                 <span class="tag">Lifestyle</span>
@@ -50,7 +46,7 @@
                 <img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg" alt="technology">
                 <div class="content">
                     <span class="tag">Technology</span>
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id et nesciunt iure fugiat ve amet.</h2>
+                    <h2>Lorem ipsum dolor sit amet consectet.</h2>
         
                     <div class="profile">
                          <img src="https://images.pexels.com/photos/157661/young-woman-shooting-model-157661.jpeg" alt="profile">
@@ -63,7 +59,7 @@
                 <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg" alt="travel">
                 <div class="content">
                     <span class="tag">Travel</span>
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id et nesciunt iure fugiat ve amet.</h2>
+                    <h2>Lorem ipsum dolor sit amet consectet.</h2>
                     
                     <div class="profile">
                         <img src="https://images.pexels.com/photos/157661/young-woman-shooting-model-157661.jpeg" alt="profile">
@@ -76,7 +72,8 @@
         </div>
 
      </section>
-     <!-- category section-->
+ 
+
       <section class="category_section">
         <h1>Browse By Category</h1>
         <p>Select a category to see more related content</p>
@@ -90,8 +87,7 @@
 
         </div>
      </section>
-
-     <section class="cards-section">
+     <section class="card-grid">
         <div class="cards">
             <div class="card">
                 <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" alt="tech">
@@ -163,6 +159,7 @@
 
         </div>
      </section>
+
      <div class="browse-btn">
         <button >Browse All Posts</button>
     </div>
@@ -202,6 +199,7 @@
     </div>
 
     <section class="newsletter-section">
+       <div class="newsletter-container">
         <div class="news-content">
          <h2>Subscribe to Newsletter</h2>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus laboriosam incidunt cum mollitia libero cupiditate laborum.</p>
@@ -210,12 +208,13 @@
            <input type="email" placeholder="Enter your email address">
            <button type="submit">Subscribe</button>
         </form>
-
+       </div>
     </section>
 
      <footer class="site-footer">
-    <p><i class="fa-solid fa-copyright"></i>2025 AchieversIT. All Rights Reserved</p>
-    <div class="footer-links">
+        <div class="footer-container">
+        <p><i class="fa-solid fa-copyright"></i>2025 AchieversIT. All Rights Reserved</p>
+       <div class="footer-links">
         <a href="#">Privacy</a>
         <a href="#">Terms</a>
         <a href="#">Connect</a>
@@ -229,6 +228,8 @@
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-youtube"></i>
     </div>
+   </div>
 </footer>
+    
 </body>
 </html>
