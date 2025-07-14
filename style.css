@@ -250,7 +250,9 @@ header img{
 
 .browse-btn {
   margin-top: 40px;
- margin-left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .browse-btn button {
